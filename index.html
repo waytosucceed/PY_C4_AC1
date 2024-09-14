@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>logical operators and nested if blocks.</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <img src="./logo/Logo.png" alt="Logo" class="logo" />
+      <img src="./logo/header.png" alt="Header" class="header-image" />
+    </header>
+
+    <div class="container mt-5">
+      <h1 class="text-center">Logical operators and nested if blocks.</h1>
+      <p class="text-center">Click on each topic to learn more.</p>
+
+      <div class="row">
+        <div>
+          <button
+            class="btn btn-custom btn-block"
+            data-toggle="modal"
+            data-target="#nestedIfBlockModal"
+          >
+            Nested If Block
+          </button>
+        </div>
+        <div>
+          <button
+            class="btn btn-custom btn-block"
+            data-toggle="modal"
+            data-target="#logicalOperatorsModal"
+          >
+            Logical Operators
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modals -->
+    <div
+      class="modal fade"
+      id="nestedIfBlockModal"
+      tabindex="-1"
+      aria-labelledby="nestedIfBlockLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="nestedIfBlockLabel">Nested If Block</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+                <p>
+                  A nested if block is an if statement inside another if
+                  statement. Let’s say you visit an amusement park. You must
+                  have seen on some rides there are height restrictions. You
+                  wish to go on one of the rides but you can only go if your
+                  height is above 157 cm and you have a ticket. Any idea how we
+                  can make that decision using coding?
+                </p>
+
+                <h4>Case 1:</h4>
+                <img
+                  class="modal-img"
+                  src="./images/sc1.png"
+                  alt="sc"
+                  style="width: 100%; max-width: 600px"
+                />
+                <br />
+
+                <h4>Case 2:</h4>
+                <img
+                  class="modal-img"
+                  src="./images/sc2.png"
+                  alt="sc"
+                  style="width: 100%; max-width: 600px"
+                />
+                <br />
+
+                <h4>Case 3:</h4>
+                <img
+                  class="modal-img"
+                  src="./images/sc3.png"
+                  alt="sc"
+                  style="width: 100%; max-width: 600px"
+                />
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="logicalOperatorsModal"
+      tabindex="-1"
+      aria-labelledby="logicalOperatorsLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog custom-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="logicalOperatorsLabel">
+              Logical Operators
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="content-container">
+              <div class="text-content">
+                <p>
+                  Logical operators are used to combine 2 or more conditions.
+                  There are 3 logical operators in Python:
+                </p>
+                <ul>
+                  <li><strong>and</strong></li>
+                  <li><strong>or</strong></li>
+                  <li><strong>not</strong></li>
+                </ul>
+                <p>Let’s understand them with simple examples!</p>
+
+                <h4>and</h4>
+                <p>
+                  Let’s say, you have to make a small decision to wear a
+                  raincoat or not. Tell me how will you decide that?
+                </p>
+                <p>
+                  If it is raining and you are going out, then you will wear a
+                  raincoat, right?
+                </p>
+                <p>How will that look in the code?</p>
+                <img
+                  class="modal-img"
+                  src="./images/sc4.png"
+                  alt="sc"
+                  style="width: 100%; max-width: 600px"
+                />
+                <br />
+
+                <p>
+                  Now here, if either of the 2 conditions becomes false, let’s
+                  say it is not raining or you are not going out, then you would
+                  not be wearing a raincoat. Let’s try to change these
+                  conditions and see what happens:
+                </p>
+                <ul>
+                  <li>Not raining and going out</li>
+                  <img
+                    class="modal-img"
+                    src="./images/sc5.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 600px"
+                  />
+                  <br />
+
+                  <li>Raining but not going out</li>
+                  <img
+                    class="modal-img"
+                    src="./images/sc6.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 600px"
+                  />
+                  <br />
+
+                  <li>Not raining and not going out</li>
+                  <img
+                    class="modal-img"
+                    src="./images/sc7.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 600px"
+                  />
+                  <br />
+                </ul>
+                <p>
+                  As you can see here, the <code>and</code> operator checks if
+                  both the conditions are true; only then the entire expression
+                  is true. If either of the conditions is false, it becomes
+                  false.
+                </p>
+
+                <h4>or</h4>
+                <p>Let’s consider another situation.</p>
+                <p>
+                  Let’s say, you will start doing a project if you have a free
+                  afternoon or feel inspired. Let’s see what that decision would
+                  look like in code.
+                </p>
+
+                <p>Here we are saying:</p>
+                <ul>
+                  <li>Free afternoon but not inspired</li>
+                  <img
+                    class="modal-img"
+                    src="./images/sc8.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 600px"
+                  />
+                  <br />
+
+                  <li>No free afternoon but inspired</li>
+                  <img
+                    class="modal-img"
+                    src="./images/sc9.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 600px"
+                  />
+                  <br />
+
+                  <li>Free afternoon and inspired</li>
+                  <img
+                    class="modal-img"
+                    src="./images/sc10.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 600px"
+                  />
+                  <br />
+
+                  <li>No free afternoon and not inspired</li>
+                  <img
+                    class="modal-img"
+                    src="./images/sc11.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 600px"
+                  />
+                  <br />
+                </ul>
+                <p>
+                  So here we can say, the <code>or</code> operator requires at
+                  least one condition to be true to make the expression true.
+                </p>
+                <div style="display: flex; gap: 1rem">
+                  <img
+                    class="modal-img"
+                    src="./images/sc12.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 300px"
+                  />
+                  <br />
+                  <p>Expression is a combination of 2 or more conditions.</p>
+                </div>
+                <h4>not</h4>
+                <p>Let’s have a look at another situation.</p>
+                <p>
+                  When do we wear a sweater? When it is cold. Can we also say we
+                  wear a sweater when it is not warm? Let’s see what that
+                  decision of wearing a sweater would look like in coding!
+                </p>
+                <ul>
+                  <li>Not warm</li>
+                  <img
+                    class="modal-img"
+                    src="./images/sc13.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 600px"
+                  />
+                  <br />
+
+                  <li>Warm</li>
+
+                  <img
+                    class="modal-img"
+                    src="./images/sc14.png"
+                    alt="sc"
+                    style="width: 100%; max-width: 600px"
+                  />
+                  <br />
+                </ul>
+                <p>
+                  What a <code>not</code> operator does is, it inverts the value
+                  of the expression. Here you can see <code>is_warm</code> has a
+                  False value in the first case, and from our knowledge of the
+                  if block, we know that only if the condition is true, the
+                  statements inside the block get executed. So what a
+                  <code>not</code> operator does is, it just inverts the value
+                  of the expression.
+                </p>
+
+                <p>
+                  Now that you have an idea about how logical operators and
+                  nested if blocks are, it’s time for today’s challenge!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
